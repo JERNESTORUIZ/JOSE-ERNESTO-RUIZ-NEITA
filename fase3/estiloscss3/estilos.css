@@ -4,10 +4,11 @@ h1{
     text-align: center;
     
 }
+
 h2{
-    color: crimson;
+    color: ivory;
     text-align: justify;
-    background-color: darkcyan;
+    background-color: rgb(48, 55, 155);
 }
 h3{
     color: darkblue;
@@ -30,5 +31,9 @@ header{
 
 }
 body{
-    background-color: chartreuse;
+    background-color: #b8c340;
+}
+li{
+    color: midnightblue;
+    background-color: mintcream;
 }
