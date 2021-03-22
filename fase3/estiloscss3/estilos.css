@@ -1,0 +1,31 @@
+h1{
+    color: blue;
+    background-color: burlywood;
+    text-align: center;
+    
+}
+h2{
+    color: crimson;
+    text-align: justify;
+    background-color: darkcyan;
+}
+h3{
+    color: darkblue;
+    background-color: darkkhaki;
+    text-align: justify;
+}
+h4{
+    background-color: darkorange;
+    text-align: justify;
+    color: darkorchid;
+}
+h6{
+    background-color: deepskyblue;
+    text-align: justify;
+    color: ghostwhite;
+
+}
+header{
+    background-color: gold;
+
+}
