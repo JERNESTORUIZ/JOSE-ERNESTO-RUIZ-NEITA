@@ -1,36 +1,93 @@
-*{
-    padding: 0px;
-    margin: 0px;
-}
-ul, ol{
-    list-style: none;
-}
-.nav li a{
+header{
+
     background-color: darkcyan;
-    color: #000;   
-    padding: 10px 15px;
-    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+nav{
+    background:yellow;
+    padding: 10px;
+    ;
+   
 
 }
-.nav > li{
+section{
     float: left;
+    background: slategray;
+    width: 65%;
+
 }
-.nav li ul{
-    display: none;
-    position: absolute;
-    min-width:150px;
+aside{
+    float: left;
+    background: steelblue;
+    width: 35%;
+
+
 }
-.nav li :hover > ul{
+footer{
+    background-color: darkcyan;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.contenedor::after{
+   content: "";
     display: block;
+    clear: both;
 }
-
-.nav li ul li{
-    position: relative;
+h1{
+    color: ghostwhite;
+}
+h2{
+    color: black;
+}
+.navegacion{
+    padding: 0;
+    margin: 0;
+  
 
 }
-.nav li ul li ul{
-    right: -150px;
-    top: 0px;
+.navegacion ul {
+    list-style: none;
+
+
 }
+.menu > li {
+    
+    display: inline-block;
+}
+.menu > li > a {
+    display: block;
+    padding: 10px  50px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.menu li a :hover {
+    color: chartreuse;
+    transition: all .3s;
 
+}
+.submenu{
+    position: absolute;
+    background: chocolate;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
 
+}
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: cyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+   
+
+}
+.menu li a :hover .submenu {
+    display: visible;
+    opacity: 1;
+}
