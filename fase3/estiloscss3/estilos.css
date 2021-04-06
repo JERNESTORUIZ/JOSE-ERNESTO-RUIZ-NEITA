@@ -28,7 +28,11 @@ footer{
     background-color: darkcyan;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    
+    color: floralwhite;
+    line-height: .0em;
+    font-size: 1 em;
+    margin: 0;
+    padding: 15px 30px;
 }
 .contenedor::after{
    content: "";
@@ -44,26 +48,67 @@ h2{
 
 /* menu */
 
-.menuCSS3 ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-.menuCSS3 a {
-    display: block;
-    padding: 2em;
-    background-color: #F9B53C;
-    text-decoration: none;
-    color: #191C26;
-}
-.menuCSS3 a:hover {
-    background-color: #CC673B;
-}
-.menuCSS3 ul li ul {
-    display: none;
-}
-.menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
-    display: block;
-}
 
+.navegacion{
+    width: 100%;
+  
+}
+.navegacion ul {
+    list-style: none;
+    position: relative;
+    color: aqua;
+
+
+}
+.menu > li {
+    position: relative;
+	display: inline-block;
+    padding: -20;
+}
+.menu ul > li{
+    display: block;
+    padding: -15px;
+    width: -15px;
+
+}
+.menu > li > a {
+    display: block;
+	padding: 10px 60px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+.menu li > a :hover {
+    color: #CE7D35;
+	transition: all .3s;
+
+}
+.submenu{
+    position: absolute;
+	background: yellowgreen;
+	width: 150%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s;
+    
+}
+.submenu li > a {
+    display: inline-block;
+	padding: 15px;
+	color:blue;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+    color: black;
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+.navegacion nav > ul> li> a{
+    text-decoration: none;
+    display: block;
+}
+.menu li li{
+    display: block;
+    position: relative ;
+}
