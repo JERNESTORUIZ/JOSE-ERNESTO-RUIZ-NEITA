@@ -1,0 +1,114 @@
+header{
+
+    background-image: url("../img/UNAD_EE.jpg");
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+nav{
+    background:yellow;
+    padding: 10px;
+    
+
+}
+section{
+    float: left;
+    background: slategray;
+    width: 65%;
+
+}
+aside{
+    float: left;
+    background: steelblue;
+    width: 35%;
+
+
+}
+footer{
+    background-color: darkcyan;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: floralwhite;
+    line-height: .0em;
+    font-size: 1 em;
+    margin: 0;
+    padding: 15px 30px;
+}
+.contenedor::after{
+   content: "";
+    display: block;
+    clear: both;
+}
+h1{
+    color: ghostwhite;
+}
+h2{
+    color: black;
+}
+
+/* menu */
+
+
+.navegacion{
+    width: 100%;
+  
+}
+.navegacion ul {
+    list-style: none;
+    position: relative;
+    color: aqua;
+
+
+}
+.menu > li {
+    position: relative;
+	display: inline-block;
+    padding: -20;
+}
+.menu ul > li{
+    display: block;
+    padding: -15px;
+    width: -15px;
+
+}
+.menu > li > a {
+    display: block;
+	padding: 10px 60px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+.menu li > a :hover {
+    color: #CE7D35;
+	transition: all .3s;
+
+}
+.submenu{
+    position: absolute;
+	background: yellowgreen;
+	width: 150%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s;
+    
+}
+.submenu li > a {
+    display: inline-block;
+	padding: 15px;
+	color:blue;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+    color: black;
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+.navegacion nav > ul> li> a{
+    text-decoration: none;
+    display: block;
+}
+.menu li li{
+    display: block;
+    position: relative ;
+}
